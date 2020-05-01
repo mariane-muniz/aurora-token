@@ -1,7 +1,7 @@
 package com.omni.aurora.token.filter;
 
 import com.nimbusds.jwt.SignedJWT;
-import com.omni.aurora.core.property.JWTConfiguration;
+import com.omni.aurora.token.property.JWTConfiguration;
 import com.omni.aurora.token.converter.TokenConverter;
 import com.omni.aurora.token.util.SecurityContextUtil;
 import lombok.RequiredArgsConstructor;
