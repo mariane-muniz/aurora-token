@@ -33,6 +33,7 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/course/v1/admin/**").hasRole("ADMIN")
                 .antMatchers("/auth/user/**").hasAnyRole("ADMIN", "USER")
                 .antMatchers("**/aurora/**").permitAll()
+                .antMatchers("/**/entity-structure").permitAll()
                 .anyRequest().authenticated();
     }
 }
